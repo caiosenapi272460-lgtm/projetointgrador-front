@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-listagem',
-  imports: [],
+  standalone: false,
   templateUrl: './listagem.html',
   styleUrl: './listagem.scss',
 })
