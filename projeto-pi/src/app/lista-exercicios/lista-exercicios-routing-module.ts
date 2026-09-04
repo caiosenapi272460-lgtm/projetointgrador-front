@@ -4,6 +4,7 @@ import { Ex1 } from '../ListaExercicios/ex1/ex1';
 import { Ex2 } from '../ListaExercicios/ex2/ex2';
 import { Ex3 } from '../ListaExercicios/ex3/ex3';
 import { Ex4 } from '../ListaExercicios/ex4/ex4';
+import { Ex5 } from '../ListaExercicios/ex5/ex5';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path: 'ex4', component: Ex4
+  },
+  {
+     path: 'ex5', component: Ex5
   }
 ];
 
