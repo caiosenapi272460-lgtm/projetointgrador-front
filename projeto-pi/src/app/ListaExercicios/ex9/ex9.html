@@ -1,0 +1,24 @@
+<h1>EX9</h1>
+<h2>Controle de Estoque</h2>
+
+<label>Nome do produto:</label>
+
+<input
+  type="text"
+  [(ngModel)]="nomeProduto">
+
+<hr>
+
+<p>Produto: {{ nomeProduto }}</p>
+
+<p>Estoque: {{ estoque }}</p>
+
+<button
+  [disabled]="estoque === 0"
+  (click)="diminuirEstoque()">
+  -
+</button>
+
+<button (click)="aumentarEstoque()">
+  +
+</button>
