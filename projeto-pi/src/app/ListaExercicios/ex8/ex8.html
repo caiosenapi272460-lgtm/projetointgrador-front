@@ -1,1 +1,26 @@
-<p>ex8 works!</p>
+<h2>Cadastro de Produto</h2>
+
+<label>Produto:</label>
+<input type="text" [(ngModel)]="produto">
+
+<br><br>
+
+<label>Preço:</label>
+<input type="number" [(ngModel)]="preco">
+
+<br><br>
+
+<label>Quantidade:</label>
+<input type="number" [(ngModel)]="quantidade">
+
+<hr>
+
+<h3>Resumo</h3>
+
+<p>Produto: {{ produto }}</p>
+
+<p>Preço: {{ preco | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</p>
+
+<p>Quantidade: {{ quantidade }}</p>
+
+<p>Total: {{ preco * quantidade | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</p>

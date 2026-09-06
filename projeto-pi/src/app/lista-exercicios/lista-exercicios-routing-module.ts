@@ -7,6 +7,7 @@ import { Ex4 } from '../ListaExercicios/ex4/ex4';
 import { Ex5 } from '../ListaExercicios/ex5/ex5';
 import { Ex6 } from '../ListaExercicios/ex6/ex6';
 import { Ex7 } from '../ListaExercicios/ex7/ex7';
+import { Ex8 } from '../ListaExercicios/ex8/ex8';
 
 const routes: Routes = [
   {
@@ -29,6 +30,9 @@ const routes: Routes = [
   },
   {
     path: 'ex7', component: Ex7
+  },
+  {
+    path: 'ex8', component: Ex8
   }
 ];
 
