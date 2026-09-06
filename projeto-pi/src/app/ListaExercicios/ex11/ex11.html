@@ -1,0 +1,32 @@
+<h1>EX11</h1>
+<h2>{{ nomeProduto }}</h2>
+
+<p>
+  Preço:
+  {{ preco }}
+</p>
+
+<p>Quantidade: {{ quantidade }}</p>
+
+<button
+  [disabled]="quantidade === 1"
+  (click)="diminuirQuantidade()">
+  -
+</button>
+
+<button
+  (click)="aumentarQuantidade()">
+  +
+</button>
+
+<p>
+  Total:
+  {{ preco * quantidade }}
+</p>
+
+<button
+  (click)="adicionarAoCarrinho()">
+  Adicionar ao carrinho
+</button>
+
+<p>{{ mensagem }}</p>
