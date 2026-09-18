@@ -1,0 +1,15 @@
+<h1>Ex2</h1>
+
+@if (usuarioLogado) {
+  <p>Usuário autenticado</p>
+} @else {
+  <p>Acesso não autorizado</p>
+}
+
+<button (click)="alternarLogin()">
+  @if (usuarioLogado) {
+    Sair
+  } @else {
+    Entrar
+  }
+</button>
