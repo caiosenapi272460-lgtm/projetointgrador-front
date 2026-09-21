@@ -1,0 +1,21 @@
+<h1>Ex4</h1>
+
+<h2>Situaçao do estoque</h2>
+
+<p>Produto: {{ nomeProduto }}</p>
+
+<p>Quantidade em estoque: {{ quantidadeEstoque }}</p>
+
+@if (quantidadeEstoque > 0) {
+  <p>Produto disponível</p>
+} @else {
+  <p>Produto sem estoque</p>
+}
+
+<button (click)="adicionarEstoque()">Adicionar</button>
+
+<button
+  [disabled]="quantidadeEstoque === 0"
+  (click)="removerEstoque()">
+  Remover
+</button>
