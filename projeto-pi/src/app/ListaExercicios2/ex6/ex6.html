@@ -1,0 +1,20 @@
+<h1>Ex6</h1>
+<h1>Lista de nomes</h1>
+
+<p>Quantidade total: {{ nomes.length }}</p>
+
+@if (nomes.length === 0) {
+  <p>Nenhum nome cadastrado</p>
+} @else {
+  <ul>
+    @for (nome of nomes; track $index) {
+      <li>{{ $index + 1 }} - {{ nome }}</li>
+    }
+  </ul>
+}
+
+<button (click)="removerUltimo()">Remover último</button>
+
+<button (click)="limparLista()">Limpar lista</button>
+
+<button (click)="restaurarLista()">Restaurar lista inicial</button>
