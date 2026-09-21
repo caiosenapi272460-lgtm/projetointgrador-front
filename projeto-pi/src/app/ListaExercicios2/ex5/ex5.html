@@ -1,0 +1,19 @@
+<h1>EX5</h1>
+
+<h1>Lista de nomes</h1>
+
+<ul>
+  @for (nome of nomes; track $index) {
+    <li>
+      {{ $index + 1 }} - {{ nome }}
+
+      @if ($first) {
+        <span> - Primeiro da lista</span>
+      }
+
+      @if ($last) {
+        <span> - Último da lista</span>
+      }
+    </li>
+  }
+</ul>
