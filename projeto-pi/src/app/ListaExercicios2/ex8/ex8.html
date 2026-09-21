@@ -1,0 +1,18 @@
+<h1>Ex8</h1>
+
+<h1>Lista de produtos</h1>
+
+@for (produto of produtos; track produto.id) {
+  <div>
+    <h2>{{ $index + 1 }} - {{ produto.nome }}</h2>
+
+    <p>Preço: {{ produto.preco | currency:'BRL' }}</p>
+
+    <p>Quantidade disponível: {{ produto.quantidade }}</p>
+
+    <p>
+      Valor total em estoque:
+      {{ produto.preco * produto.quantidade | currency:'BRL' }}
+    </p>
+  </div>
+}
