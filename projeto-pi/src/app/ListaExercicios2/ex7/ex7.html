@@ -1,0 +1,17 @@
+<h1>Ex7</h1>
+
+<h1>Cores alternadas</h1>
+
+@for (disciplina of disciplinas; track $index) {
+  <div
+    [ngClass]="{
+      'cor-par': $odd,
+      'cor-impar': $even,
+      'primeira': $first,
+      'ultima': $last
+    }">
+
+    {{ $index + 1 }} - {{ disciplina }}
+
+  </div>
+}
