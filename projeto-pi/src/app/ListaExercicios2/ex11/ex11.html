@@ -1,0 +1,18 @@
+<h1>Ex11</h1>
+<h2>Lista de Produtos</h2>
+
+<button
+  (click)="alternarFiltro()"
+>
+  {{ somenteDisponiveis
+    ? 'Exibir todos os produtos'
+    : 'Exibir somente disponíveis'
+  }}
+</button>
+
+<p>
+  Filtro atual:
+  <strong>
+    {{ somenteDisponiveis ? 'Somente disponíveis' : 'Todos os produtos' }}
+  </strong>
+</p>
