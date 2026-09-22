@@ -13,6 +13,7 @@ import { Ex10 } from '../ListaExercicios2/ex10/ex10';
 import { Ex11 } from '../ListaExercicios2/ex11/ex11';
 import { Ex12 } from '../ListaExercicios2/ex12/ex12';
 import { Ex13 } from '../ListaExercicios2/ex13/ex13';
+import { Ex14 } from '../ListaExercicios2/ex14/ex14';
 
 const routes: Routes = [
   {
@@ -53,6 +54,9 @@ const routes: Routes = [
   },
   {
     path: 'ex13', component: Ex13
+  },
+  {
+    path: 'ex14', component: Ex14
   }
 ];
 
