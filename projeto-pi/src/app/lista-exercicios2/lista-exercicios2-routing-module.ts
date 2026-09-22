@@ -11,6 +11,8 @@ import { Ex8 } from '../ListaExercicios2/ex8/ex8';
 import { Ex9 } from '../ListaExercicios2/ex9/ex9';
 import { Ex10 } from '../ListaExercicios2/ex10/ex10';
 import { Ex11 } from '../ListaExercicios2/ex11/ex11';
+import { Ex12 } from '../ListaExercicios2/ex12/ex12';
+import { Ex13 } from '../ListaExercicios2/ex13/ex13';
 
 const routes: Routes = [
   {
@@ -45,6 +47,12 @@ const routes: Routes = [
   },
   {
     path: 'ex11', component: Ex11
+  },
+  {
+    path: 'ex12', component: Ex12
+  },
+  {
+    path: 'ex13', component: Ex13
   }
 ];
 
