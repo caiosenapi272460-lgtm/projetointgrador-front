@@ -1,0 +1,56 @@
+
+.resumo {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.tarefa {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.prioridade-alta {
+  color: red;
+  font-weight: bold;
+}
+
+.prioridade-media {
+  color: orange;
+  font-weight: bold;
+}
+
+.prioridade-baixa {
+  color: green;
+  font-weight: bold;
+}
+
+.concluida {
+  background-color: #e8f5e9;
+  border-left: 6px solid green;
+  opacity: 0.8;
+}
+
+.concluida h3 {
+  text-decoration: line-through;
+}
+
+.mensagem-vazia {
+  color: #666;
+  font-style: italic;
+  padding: 15px;
+  border: 1px dashed #aaa;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

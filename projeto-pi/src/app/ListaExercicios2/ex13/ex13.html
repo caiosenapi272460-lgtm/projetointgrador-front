@@ -1,1 +1,80 @@
-<p>ex13 works!</p>
+<h1>Ex13</h1>
+<h2>Lista de Tarefas</h2>
+
+<div class="resumo">
+
+  <p>
+    Total de tarefas:
+    <strong>{{ totalTarefas() }}</strong>
+  </p>
+
+  <p>
+    Tarefas concluídas:
+    <strong>{{ tarefasConcluidas() }}</strong>
+  </p>
+
+  <p>
+    Tarefas pendentes:
+    <strong>{{ tarefasPendentes() }}</strong>
+  </p>
+
+</div>
+
+<hr>
+
+<ng-container *ngIf="tarefas.length > 0; else listaVazia">
+
+  <div
+    *ngFor="let tarefa of tarefas"
+    class="tarefa"
+    [ngClass]="{
+      'concluida': tarefa.concluida
+    }"
+  >
+
+    <h3>{{ tarefa.titulo }}</h3>
+
+    <p>
+      ID: {{ tarefa.id }}
+    </p>
+
+    <p>
+      Responsável: {{ tarefa.responsavel }}
+    </p>
+
+    <p>
+      Prioridade:
+      <span
+        [ngClass]="classePrioridade(tarefa.prioridade)"
+      >
+        {{ tarefa.prioridade | titlecase }}
+      </span>
+    </p>
+
+    <p>
+      Situação:
+      <strong>
+        {{ tarefa.concluida ? 'Concluída' : 'Pendente' }}
+      </strong>
+    </p>
+
+    <button
+      (click)="alterarSituacao(tarefa)"
+    >
+      {{ tarefa.concluida
+        ? 'Marcar como pendente'
+        : 'Marcar como concluída'
+      }}
+    </button>
+
+  </div>
+
+</ng-container>
+
+<ng-template #listaVazia>
+
+  <p class="mensagem-vazia">
+    Não existem tarefas cadastradas.
+  </p>
+
+</ng-template>
