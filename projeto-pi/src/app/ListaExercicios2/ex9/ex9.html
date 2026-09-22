@@ -1,0 +1,18 @@
+<h1>Ex9</h1>
+<h2>Classificação de Estoque</h2>
+
+<div *ngFor="let produto of produtos" class="produto">
+
+  <h3>{{ produto.nome }}</h3>
+
+  <p>Preço: {{ produto.preco | currency:'BRL' }}</p>
+
+  <p>Quantidade em estoque: {{ produto.quantidade }}</p>
+
+  <p
+    [ngClass]="classeEstoque(produto.quantidade)"
+  >
+    {{ classificarEstoque(produto.quantidade) }}
+  </p>
+
+</div>
