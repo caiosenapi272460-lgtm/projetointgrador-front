@@ -10,5 +10,9 @@ import { CabecalhoComponent } from './cabecalho/cabecalho';
   styleUrl: './app.scss'
 })
 export class App {
+
   protected readonly title = signal('projeto-pi');
+
+  loja = "lojaAngularPai";
+
 }

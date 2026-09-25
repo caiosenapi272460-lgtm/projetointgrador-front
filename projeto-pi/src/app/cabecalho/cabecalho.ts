@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cabecalho',
@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './cabecalho.scss'
 })
 export class CabecalhoComponent {
+  @Input()
+  topo = "lojaAngular2";
 }
